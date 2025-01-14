@@ -86,8 +86,6 @@ fig_2.add_shape(
 
 app = dash.Dash(__name__)
 
-server = app.server
-
 app.layout = html.Div([
     html.H1("Lottery Sales and HOPE Scholarships", style={'font-family': 'Open Sans, sans-serif'}),
     html.H3("Assessing the wealth of Georgia counties and their ratio of lottery spending to scholarship funding.",
@@ -131,6 +129,8 @@ def toggle_outliers(toggle_val):
     else:
         return fig_2
 
+
+server = app.server
 
 if __name__ == '__main__':
     app.run_server(debug=True)
