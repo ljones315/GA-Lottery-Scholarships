@@ -100,6 +100,7 @@ app.layout = html.Div([
     html.Div([
         html.H2("Some notes:"),
         html.Ul([
+            html.Li("You can hover over points to see the its label and values!"),
             html.Li("A higher ratio means that the county takes in a lot more money in scholarship funding than it spends on lottery."),
             html.Li("""Counties that fall below the red line are spending (relatively) more on lotto tickets than they're recieving in scholarship funds. 
                     The available data gives us \"retailer commissions\" rather than raw sales data, so it's not necessarily a 1:1 of spending to funding. 
